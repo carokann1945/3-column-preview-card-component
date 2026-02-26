@@ -12,7 +12,7 @@ type Props = {
 
 export default function Card({ children, bgColor, hoverColor, buttonTextColor, title, content }: Props) {
   return (
-    <main
+    <div
       className={`w-[327px] h-[442px] flex p-[48px] ${bgColor} md:w-[608px] md:h-[391px] md:px-[80px] md:py-[48px]
       xl:w-[307px] xl:h-[500px] xl:p-[48px]`}>
       <div className="w-full flex flex-col gap-[32px] xl:w-[212px] xl:gap-[40px]">
@@ -25,6 +25,6 @@ export default function Card({ children, bgColor, hoverColor, buttonTextColor, t
           <Button color={buttonTextColor} hoverColor={hoverColor} />
         </div>
       </div>
-    </main>
+    </div>
   );
 }
