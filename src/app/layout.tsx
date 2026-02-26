@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bigShoulders.variable} ${lexend.variable}`}>
       <body
-        className="antialiased w-full min-h-[1502px] flex justify-center items-center
+        className="antialiased bg-gray-100 w-full min-h-[1502px] flex justify-center items-center
       md:min-h-[1350px] xl:min-h-screen">
         {children}
       </body>
